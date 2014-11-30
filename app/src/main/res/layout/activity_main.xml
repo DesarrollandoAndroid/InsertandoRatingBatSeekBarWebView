@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity" android:background="#000000"
+    android:id="@+id/relativeLayout" >
+
+    <TextView
+        android:text="@string/votacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#ff0000"
+        android:id="@+id/textViewVota"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/textViewVota"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="2.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultadoVotacion"
+        android:id="@+id/textViewResultado"
+        android:layout_below="@+id/ratingBar"
+        android:textSize="18sp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:id="@+id/textViewSeekBar"
+        android:layout_below="@+id/textViewResultado"
+        android:layout_centerHorizontal="true"
+        android:background="#ff10ff76" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/textViewSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:max="125" />
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/seekBar" />
+
+
+</RelativeLayout>

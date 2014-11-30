@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InsertandoRatingBatSeekBarWebView</string>
+    <string name="votacion">Vota la aplicación!</string>
+    <string name="action_settings">Settings</string>
+    <string name="votaBoton">Danos tu Puntuación</string>
+    <string name="resultadoVotacion">Tu puntuación ha sido: </string>
+
+</resources>
