@@ -1,4 +1,4 @@
-package desarrollandoandroid.insertandoratingbatseekbarwebview;
+package desarrollandoandroid.insertandoratingbarseekbarwebview;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
