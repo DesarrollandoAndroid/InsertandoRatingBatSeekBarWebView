@@ -1,11 +1,11 @@
 package desarrollandoandroid.insertandoratingbatseekbarwebview;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
-import android.widget.Button;
+import android.webkit.WebViewClient;
 import android.widget.RatingBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -29,6 +29,10 @@ public class MainActivity extends ActionBarActivity {
         mSeekBar = (SeekBar) findViewById(R.id.seekBar);
         mSeekText = (TextView) findViewById(R.id.textViewSeekBar);
         mWebView = (WebView) findViewById(R.id.webView);
+// Evitar redirección para que el enlace no se abra en el navegador y si en la propia app
+        mWebView.setWebViewClient(new WebViewClient());
+        mWebView.getSettings().setJavaScriptEnabled(true);
+// Cargamos la página en el webView
         mWebView.loadUrl("http://desarrollandoandroid.wordpress.com");
 
         mRatingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
